@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.form-wrapper , .form-wrapper-2{
+    width: 28em;
+    position: absolute;
+    padding: 2em;
+    color: #0dcaf0;
+    background-color: #2e2d2d;
+    left: 50%;
+    transform: translate(-50%, 8em);
+    border-radius: 10px;
+}
+.form-wrapper input{
+    background-color: #2e2d2d;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #0dcaf0;
+    color: #0dcaf0;
+}
+.form-wrapper-2 input{
+    background-color: #2e2d2d;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #0dcaf0;
+    color: #0dcaf0;
+}
+button{
+    background-color: #0dcaf0;
+}
+label{
+    margin-bottom: 0.2em;
+}
+#el{
+    margin-bottom: 1.5em;
+}
+.heading h1{
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+#First-name{
+    outline: none;
+}
+#Last-name , #email , #Password , #Confirm-Password{
+    outline: none;
+}
+#error3 , #error4 ,#error5{
+    color: red;
+}
+#bell{
+    margin-bottom: 1.5em;
+}
+#dell{
+    margin-bottom: 1.5em;
+}
+.width{
+    max-width: 11.438em;
+}
+@media (max-width:767px){
+    .width{
+        max-width: none;
+    }
+}
+@media (max-width:485px){
+    .form-wrapper, .form-wrapper-2{
+        width: 95%;
+    }
+    .form-wrapper, .form-wrapper-2 {
+        transform: translate(-50%, 1em);
+    }
+}

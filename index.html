@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Creat Account</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-wrapper" id="form-wrapper">
+                    <div class="heading">
+                        <h1 class="mb-5">Creat Account</h1>
+                    </div> 
+                    <form action="" class="d-grid">
+                        <div class="d-md-flex justify-content-between" id="el">
+                            <div class="d-md-flex d-grid flex-column w-100 width mb-4 mb-md-auto">
+                                <label for="First-name">First name</label>           
+                                <input type="text" name="First-name" id="First-name" autocomplete="off" placeholder="First name..!">
+                                <span id="error1"></span>
+                            </div>
+                            <div class="d-md-flex d-grid flex-column w-100 width ">
+                                <label for="Last-name">Last name</label>
+                                <input type="text" name="First-name" id="Last-name" autocomplete="off" placeholder="Last name..!">
+                                <span id="error2"></span>
+                            </div>
+                        </div>
+                        <div id="bell">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="w-100" autocomplete="off" placeholder="Email..!">
+                            <span id="error3"></span>
+                        </div>
+                        <div class="d-md-flex justify-content-between" id="dell">
+                            <div class="d-md-flex d-grid flex-column width mb-4 mb-md-auto">
+                                <label for="Password">Password</label>           
+                                <input type="password" name="First-name" id="Password" autocomplete="off" placeholder="Password..!">
+                                <span id="error4"></span>
+                            </div>
+                            <div class="d-md-flex d-grid flex-column width ">
+                                <label for="Confirm-Password">Confirm Password</label>
+                                <input type="password" name="First-name" id="Confirm-Password" autocomplete="off" placeholder="Confirm Password..!">
+                                <span id="error5"></span>
+                            </div>
+                        </div>
+                        <a href="login.html" class="text-white p-2 text-decoration-none w-100 d-block btn btn-primary" type="submit" id="btn">Creat Account</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="login.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
