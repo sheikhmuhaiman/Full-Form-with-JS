@@ -45,7 +45,7 @@ btn2.onclick = function(){
         error7.style.color = "red"
         return false;
       }
-    else if(localStorage.getItem("password2") !== password2.value){
+    else if(localStorage.getItem("Password") !== password2.value){
         error7.innerText = "Wrong password..!";
         error7.style.color = "red";
         return false;
