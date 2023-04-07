@@ -7,7 +7,22 @@ var btn2 = document.getElementById("btnlogin");
 
 
 
-
+password2.oninput = function () {
+    if (password2.value.length >= 1 && password2.value.length <= 3) {
+      error7.innerText = "Minimun 4 characters are allowed..!"
+      error7.style.color = "red"
+      return false;
+    }
+    else if (password2.value.length >= 4) {
+      error7.innerText = "Success"
+      error7.style.color = "#42e742"
+      return false;
+    }
+    else {
+      error7.innerText = "";
+      error7.style.color = "";
+    }
+}
 
 btn2.onclick = function(){
     if(email2.value.length < 1){
@@ -25,7 +40,12 @@ btn2.onclick = function(){
         error7.style.color = "red";
         return false;
     }
-    else if(localStorage.getItem("Password") !== password2.value){
+    else if (password2.value.length >= 1 && password2.value.length <= 3) {
+        error7.innerText = "Minimun 4 characters are allowed..!"
+        error7.style.color = "red"
+        return false;
+      }
+    else if(localStorage.getItem("password2") !== password2.value){
         error7.innerText = "Wrong password..!";
         error7.style.color = "red";
         return false;
